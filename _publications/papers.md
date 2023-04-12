@@ -12,7 +12,7 @@ author_profile: true
 
 ### Under Submission
 * [Investigating the Locality of Neural Network Training Dynamics](https://arxiv.org/pdf/2111.01166.pdf) <br/> **Soham Dan\***, Phanideep Gampa and Anirbit Mukherjee\*. 
-* [In and Out-of-Domain Text Adversarial Robustness via Label Smoothing] (https://arxiv.org/pdf/2212.10258.pdf) <br/> Yahan Yang\*, **Soham Dan\***, Dan Roth and Insup Lee.
+* [In and Out-of-Domain Text Adversarial Robustness via Label Smoothing](https://arxiv.org/pdf/2212.10258.pdf) <br/> Yahan Yang\*, **Soham Dan\***, Dan Roth and Insup Lee.
 
 ### 2023
 * [One Arrow, Two Kills: An Unified Framework for Achieving Optimal Regret Guarantees in Sleeping Bandits](https://arxiv.org/pdf/2210.14998.pdf) <br/> Pierre Gaillard, Aadirupa Saha, **Soham Dan**. **AISTATS** 2023
