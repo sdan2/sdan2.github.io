@@ -16,7 +16,7 @@ author_profile: true
 
 ### 2023
 * [One Arrow, Two Kills: An Unified Framework for Achieving Optimal Regret Guarantees in Sleeping Bandits](https://arxiv.org/pdf/2210.14998.pdf) <br/> Pierre Gaillard, Aadirupa Saha, **Soham Dan**. **AISTATS** 2023
-* [Two-Sample Tests for Inhomogeneous Random Graphs in 𝐿𝑟 norm: Optimality and Asymptotics] <br/> Sayak Chatterjee, Dibyendu Saha, **Soham Dan** and Bhaswar B. Bhattacharya. **AISTATS** 2023
+* [Two-Sample Tests for Inhomogeneous Random Graphs in 𝐿𝑟 norm: Optimality and Asymptotics]() <br/> Sayak Chatterjee, Dibyendu Saha, **Soham Dan** and Bhaswar B. Bhattacharya. **AISTATS** 2023
 
 
 
