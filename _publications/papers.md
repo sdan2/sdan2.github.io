@@ -11,10 +11,22 @@ author_profile: true
 
 
 ### Under Submission
+* [Understanding Calibration for Multilingual Question Answering Models](https://arxiv.org/pdf/2311.08669.pdf) <br/> Yahan Yang\*, **Soham Dan\***, Dan Roth and Insup Lee. 
+* [API-BLEND: A Comprehensive Corpora for Training and Benchmarking API LLMs](https://arxiv.org/pdf/2402.15491.pdf) <br/> Kinjal Basu, Ibrahim Abdelaziz, Subhajit Chaudhury, Soham Dan, Maxwell Crouse, Asim Munawar, Sadhana Kumaravel, Vinod Muthusamy, Pavan Kapanipathi and Luis A. Lastras.
+* [Formally specifying the high-level behavior of LLM-based agents](https://arxiv.org/pdf/2310.08535.pdf) <br/> Maxwell Crouse, Ibrahim Abdelaziz, Kinjal Basu, **Soham Dan**, Sadhana Kumaravel, Achille Fokoue, Pavan Kapanipathi and Luis Lastras.
+* [Compositional generalization in Neuro-Symbolic Visual Question Answering](https://openreview.net/pdf?id=_PK7ft76iG) <br/> Adam Dahlgren, **Soham Dan** and Tim Klinger.
+* [Compositional Program Generation for Few-Shot Systematic Generalization](https://arxiv.org/pdf/2309.16467.pdf) <br/> Tim Klinger, Luke Liu, **Soham Dan**, Maxwell Crouse, Parikshit Ram and Alexander Gray.
 * [Investigating the Locality of Neural Network Training Dynamics](https://arxiv.org/pdf/2111.01166.pdf) <br/> **Soham Dan\***, Phanideep Gampa and Anirbit Mukherjee\*. 
-* [In and Out-of-Domain Text Adversarial Robustness via Label Smoothing](https://arxiv.org/pdf/2212.10258.pdf) <br/> Yahan Yang\*, **Soham Dan\***, Dan Roth and Insup Lee.
+
+### 2024
+* [Language Guided Exploration for RL Agents in Text Environments](https://arxiv.org/pdf/2403.03141.pdf) <br/> Hitesh Golchha, Sahil Yerawar, Dhruvesh Patel, **Soham Dan\***, Keerthiram Murugesan. **Findings of NAACL** 2024
+* [On the Generalization Capacity of Neural Networks During Generic Multimodal Reasoning](https://arxiv.org/pdf/2401.15030.pdf) <br/> Takuya Ito, Soham Dan, Mattia Rigotti, James Kozloski, Murray Campbell. **ICLR** 2024
+* [Generalized Planning in PDDL Domains with Pretrained Large Language Models](https://arxiv.org/pdf/2401.15030.pdf) <br/> Tom Silver, Soham Dan, Kavitha Srinivas, Joshua B Tenenbaum, Leslie Pack Kaelbling, Michael Katz. **AAAI** 2024
 
 ### 2023
+* [In and Out-of-Domain Text Adversarial Robustness via Label Smoothing](https://arxiv.org/pdf/2212.10258.pdf) <br/> Yahan Yang\*, **Soham Dan\***, Dan Roth and Insup Lee. **ACL** 2023
+* [MISMATCH: Fine-grained Evaluation of Machine-generated Text
+with Mismatch Error Types](https://arxiv.org/pdf/2306.10452.pdf) <br/> Keerthiram Murugesan, Sarathkrishna Swaminathan, Soham Dan, Subhajit Chaudhury, Chulaka Gunasekara, Maxwell Crouse, Diwakar Mahajan, Ibrahim Abdelaziz, Achille Fokoue, Pavan Kapanipathi, Salim Roukos and Alexander Gray. **Findings of ACL** 2023
 * [One Arrow, Two Kills: An Unified Framework for Achieving Optimal Regret Guarantees in Sleeping Bandits](https://arxiv.org/pdf/2210.14998.pdf) <br/> Pierre Gaillard, Aadirupa Saha, **Soham Dan**. **AISTATS** 2023
 * [Two-Sample Tests for Inhomogeneous Random Graphs in 𝐿𝑟 norm: Optimality and Asymptotics]() <br/> Sayak Chatterjee, Dibyendu Saha, **Soham Dan** and Bhaswar B. Bhattacharya. **AISTATS** 2023
 
