@@ -16,6 +16,9 @@ Education
 
 Work experience
 ======
+* September 2022 - Present: Research Scientist
+  * IBM Research, Yorktown Heights
+
 * Summer 2019: Research Intern
   * RIKEN AIP, Tokyo, Japan
   * Supervisor: Prof. Masashi Sugiyama
