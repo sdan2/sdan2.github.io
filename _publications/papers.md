@@ -19,9 +19,9 @@ author_profile: true
 * [Investigating the Locality of Neural Network Training Dynamics](https://arxiv.org/pdf/2111.01166.pdf) <br/> **Soham Dan\***, Phanideep Gampa and Anirbit Mukherjee\*. 
 
 ### 2024
-* [Language Guided Exploration for RL Agents in Text Environments](https://arxiv.org/pdf/2403.03141.pdf) <br/> Hitesh Golchha, Sahil Yerawar, Dhruvesh Patel, **Soham Dan\*** and Keerthiram Murugesan. **Findings of NAACL** 2024
-* [On the Generalization Capacity of Neural Networks During Generic Multimodal Reasoning](https://arxiv.org/pdf/2401.15030.pdf) <br/> Takuya Ito, Soham Dan, Mattia Rigotti, James Kozloski and Murray Campbell. **ICLR** 2024
-* [Generalized Planning in PDDL Domains with Pretrained Large Language Models](https://arxiv.org/pdf/2401.15030.pdf) <br/> Tom Silver, Soham Dan, Kavitha Srinivas, Joshua B Tenenbaum, Leslie Pack Kaelbling and Michael Katz. **AAAI** 2024
+* [Language Guided Exploration for RL Agents in Text Environments](https://arxiv.org/pdf/2403.03141.pdf) <br/> Hitesh Golchha, Sahil Yerawar, Dhruvesh Patel, **Soham Dan** and Keerthiram Murugesan. **Findings of NAACL** 2024
+* [On the Generalization Capacity of Neural Networks During Generic Multimodal Reasoning](https://arxiv.org/pdf/2401.15030.pdf) <br/> Takuya Ito, **Soham Dan**, Mattia Rigotti, James Kozloski and Murray Campbell. **ICLR** 2024
+* [Generalized Planning in PDDL Domains with Pretrained Large Language Models](https://arxiv.org/pdf/2401.15030.pdf) <br/> Tom Silver, **Soham Dan**, Kavitha Srinivas, Joshua B Tenenbaum, Leslie Pack Kaelbling and Michael Katz. **AAAI** 2024
 
 ### 2023
 * [In and Out-of-Domain Text Adversarial Robustness via Label Smoothing](https://arxiv.org/pdf/2212.10258.pdf) <br/> Yahan Yang\*, **Soham Dan\***, Dan Roth and Insup Lee. **ACL** 2023
