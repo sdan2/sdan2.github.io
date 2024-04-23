@@ -11,7 +11,8 @@ author_profile: true
 
 
 ### Under Submission
-* [Understanding Calibration for Multilingual Question Answering Models](https://arxiv.org/pdf/2311.08669.pdf) <br/> Yahan Yang\*, **Soham Dan\***, Dan Roth and Insup Lee. 
+* [Understanding Calibration for Multilingual Question Answering Models](https://arxiv.org/pdf/2311.08669.pdf) <br/> Yahan Yang\*, **Soham Dan\***, Dan Roth and Insup Lee.
+* [On the Effects of Fine-tuning Language Models for Text-Based Reinforcement Learning](https://arxiv.org/pdf/2404.10174.pdf) <br/> Mauricio Gruppi, **Soham Dan**, Keerthiram Murugesan, Subhajit Chaudhury. 
 * [NeuroPrune: A Neuro-inspired Topological Sparse Training Algorithm for Large Language Models](https://arxiv.org/pdf/2404.01306.pdf) <br/> Amit Dhurandhar, Tejaswini Pedapati, Ronny Luss, **Soham Dan**, Aurelie Lozano, Payel Das, Georgios Kollias.
 * [Larimar: Large Language Models with Episodic Memory Control](https://arxiv.org/pdf/2403.11901.pdf) <br/> Payel Das, Subhajit Chaudhury, Elliot Nelson, Igor Melnyk, Sarath Swaminathan, Sihui Dai, Aurélie Lozano, Georgios Kollias, Vijil Chenthamarakshan, **Soham Dan**, Pin-Yu Chen.
 * [API-BLEND: A Comprehensive Corpora for Training and Benchmarking API LLMs](https://arxiv.org/pdf/2402.15491.pdf) <br/> Kinjal Basu, Ibrahim Abdelaziz, Subhajit Chaudhury, **Soham Dan**, Maxwell Crouse, Asim Munawar, Sadhana Kumaravel, Vinod Muthusamy, Pavan Kapanipathi and Luis A. Lastras.
