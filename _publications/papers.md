@@ -13,15 +13,15 @@ author_profile: true
 ### Under Submission
 * [Understanding Calibration for Multilingual Question Answering Models](https://arxiv.org/pdf/2311.08669.pdf) <br/> Yahan Yang\*, **Soham Dan\***, Dan Roth and Insup Lee.
 * [On the Effects of Fine-tuning Language Models for Text-Based Reinforcement Learning](https://arxiv.org/pdf/2404.10174.pdf) <br/> Mauricio Gruppi, **Soham Dan**, Keerthiram Murugesan, Subhajit Chaudhury. 
-* [NeuroPrune: A Neuro-inspired Topological Sparse Training Algorithm for Large Language Models](https://arxiv.org/pdf/2404.01306.pdf) <br/> Amit Dhurandhar, Tejaswini Pedapati, Ronny Luss, **Soham Dan**, Aurelie Lozano, Payel Das, Georgios Kollias.
-* [Larimar: Large Language Models with Episodic Memory Control](https://arxiv.org/pdf/2403.11901.pdf) <br/> Payel Das, Subhajit Chaudhury, Elliot Nelson, Igor Melnyk, Sarath Swaminathan, Sihui Dai, Aurélie Lozano, Georgios Kollias, Vijil Chenthamarakshan, **Soham Dan**, Pin-Yu Chen.
-* [API-BLEND: A Comprehensive Corpora for Training and Benchmarking API LLMs](https://arxiv.org/pdf/2402.15491.pdf) <br/> Kinjal Basu, Ibrahim Abdelaziz, Subhajit Chaudhury, **Soham Dan**, Maxwell Crouse, Asim Munawar, Sadhana Kumaravel, Vinod Muthusamy, Pavan Kapanipathi and Luis A. Lastras.
 * [Formally specifying the high-level behavior of LLM-based agents](https://arxiv.org/pdf/2310.08535.pdf) <br/> Maxwell Crouse, Ibrahim Abdelaziz, Kinjal Basu, **Soham Dan**, Sadhana Kumaravel, Achille Fokoue, Pavan Kapanipathi and Luis Lastras.
 * [Compositional generalization in Neuro-Symbolic Visual Question Answering](https://openreview.net/pdf?id=_PK7ft76iG) <br/> Adam Dahlgren, **Soham Dan** and Tim Klinger.
 * [Compositional Program Generation for Few-Shot Systematic Generalization](https://arxiv.org/pdf/2309.16467.pdf) <br/> Tim Klinger, Luke Liu, **Soham Dan**, Maxwell Crouse, Parikshit Ram and Alexander Gray.
 * [Investigating the Locality of Neural Network Training Dynamics](https://arxiv.org/pdf/2111.01166.pdf) <br/> **Soham Dan\***, Phanideep Gampa and Anirbit Mukherjee\*. 
 
 ### 2024
+* [NeuroPrune: A Neuro-inspired Topological Sparse Training Algorithm for Large Language Models](https://arxiv.org/pdf/2404.01306.pdf) <br/> Amit Dhurandhar, Tejaswini Pedapati, Ronny Luss, **Soham Dan**, Aurelie Lozano, Payel Das, Georgios Kollias. **Findings of ACL** 2024
+* [API-BLEND: A Comprehensive Corpora for Training and Benchmarking API LLMs](https://arxiv.org/pdf/2402.15491.pdf) <br/> Kinjal Basu, Ibrahim Abdelaziz, Subhajit Chaudhury, **Soham Dan**, Maxwell Crouse, Asim Munawar, Sadhana Kumaravel, Vinod Muthusamy, Pavan Kapanipathi and Luis A. Lastras. **ACL** 2024
+* [Larimar: Large Language Models with Episodic Memory Control](https://arxiv.org/pdf/2403.11901.pdf) <br/> Payel Das, Subhajit Chaudhury, Elliot Nelson, Igor Melnyk, Sarath Swaminathan, Sihui Dai, Aurélie Lozano, Georgios Kollias, Vijil Chenthamarakshan, **Soham Dan**, Pin-Yu Chen. **ICML** 2024
 * [Language Guided Exploration for RL Agents in Text Environments](https://arxiv.org/pdf/2403.03141.pdf) <br/> Hitesh Golchha, Sahil Yerawar, Dhruvesh Patel, **Soham Dan** and Keerthiram Murugesan. **Findings of NAACL** 2024
 * [On the Generalization Capacity of Neural Networks During Generic Multimodal Reasoning](https://arxiv.org/pdf/2401.15030.pdf) <br/> Takuya Ito, **Soham Dan**, Mattia Rigotti, James Kozloski and Murray Campbell. **ICLR** 2024
 * [Generalized Planning in PDDL Domains with Pretrained Large Language Models](https://arxiv.org/pdf/2401.15030.pdf) <br/> Tom Silver, **Soham Dan**, Kavitha Srinivas, Joshua B Tenenbaum, Leslie Pack Kaelbling and Michael Katz. **AAAI** 2024
