@@ -16,7 +16,10 @@ Education
 
 Work experience
 ======
-* September 2022 - Present: Research Scientist
+* September 2024 - Present: Senior Research Scientist
+  * Microsoft, New York City
+
+* September 2022 - 2024: Research Scientist
   * IBM Research, Yorktown Heights
 
 * Summer 2019: Research Intern
