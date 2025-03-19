@@ -10,19 +10,12 @@ author_profile: true
 For full list of publications see [Google Scholar(https://scholar.google.com/citations?user=nOsmu8UAAAAJ&hl=en&oi=ao)] (\* Equal Contribution, \^ Joint Advising)
 
 ### 2025
-* [Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models]()<br/> Amey Hengle, Prasoon Bajpai, **Soham Dan\^**, Tanmoy Chakraborty\^. **NAACL** 2024
+* [Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models]()<br/> Amey Hengle, Prasoon Bajpai, **Soham Dan\^**, Tanmoy Chakraborty\^. **NAACL** 2025
 * [AssertionBench: A Benchmark to Evaluate Large-Language Models for Assertion Generation
-](https://arxiv.org/pdf/2406.18627) <br/> Vaishnavi Pulavarthi, Deeksha Nandal, **Soham Dan\^**, Debjit Pal\^. **Findings of NAACL** 2024
-* [CTBench: A Comprehensive Benchmark for Evaluating Language Model Capabilities in Clinical Trial Design](https://arxiv.org/pdf/2406.17888) <br/> Nafis Neehal, Bowen Wang, Shayom Debopadhaya, **Soham Dan**, Keerthiram Murugesan, Vibha Anand, Kristin P. Bennett. **Findings of NAACL** 2024
+](https://arxiv.org/pdf/2406.18627) <br/> Vaishnavi Pulavarthi, Deeksha Nandal, **Soham Dan\^**, Debjit Pal\^. **Findings of NAACL** 2025
+* [CTBench: A Comprehensive Benchmark for Evaluating Language Model Capabilities in Clinical Trial Design](https://arxiv.org/pdf/2406.17888) <br/> Nafis Neehal, Bowen Wang, Shayom Debopadhaya, **Soham Dan**, Keerthiram Murugesan, Vibha Anand, Kristin P. Bennett. **Findings of NAACL** 2025
 * [Large Language Models can be Strong Self-Detoxifiers](https://arxiv.org/pdf/2410.03818) <br/> Ching-Yun Ko, Pin-Yu Chen, Payel Das, Youssef Mroueh, **Soham Dan**, Georgios Kollias, Subhajit Chaudhury, Tejaswini Pedapati, Luca Daniel. **ICLR** 2025
 * [On the Effects of Fine-tuning Language Models for Text-Based Reinforcement Learning](https://arxiv.org/pdf/2404.10174.pdf) <br/> Mauricio Gruppi, **Soham Dan**, Keerthiram Murugesan, Subhajit Chaudhury. **COLING** 2025
-
-### Under Submission
-* [Understanding Calibration for Multilingual Question Answering Models](https://arxiv.org/pdf/2311.08669.pdf) <br/> Yahan Yang\*, **Soham Dan\***, Dan Roth and Insup Lee.
-* [Formally specifying the high-level behavior of LLM-based agents](https://arxiv.org/pdf/2310.08535.pdf) <br/> Maxwell Crouse, Ibrahim Abdelaziz, Kinjal Basu, **Soham Dan**, Sadhana Kumaravel, Achille Fokoue, Pavan Kapanipathi and Luis Lastras.
-* [Compositional generalization in Neuro-Symbolic Visual Question Answering](https://openreview.net/pdf?id=_PK7ft76iG) <br/> Adam Dahlgren, **Soham Dan** and Tim Klinger.
-* [Compositional Program Generation for Few-Shot Systematic Generalization](https://arxiv.org/pdf/2309.16467.pdf) <br/> Tim Klinger, Luke Liu, **Soham Dan**, Maxwell Crouse, Parikshit Ram and Alexander Gray.
-* [Investigating the Locality of Neural Network Training Dynamics](https://arxiv.org/pdf/2111.01166.pdf) <br/> **Soham Dan\***, Phanideep Gampa and Anirbit Mukherjee\*. 
 
 ### 2024
 
