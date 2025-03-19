@@ -10,9 +10,9 @@ author_profile: true
 For full list of publications see [Google Scholar](https://scholar.google.com/citations?user=nOsmu8UAAAAJ&hl=en&oi=ao) (\* Equal Contribution, \^ Joint Advising)
 
 ### 2025
-* [Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models](https://arxiv.org/pdf/2408.10151)<br/> Amey Hengle, Prasoon Bajpai, **Soham Dan\^**, Tanmoy Chakraborty\^. **NAACL** 2025
+* [Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models](https://arxiv.org/pdf/2408.10151)<br/> Amey Hengle, Prasoon Bajpai, **Soham Dan^**, Tanmoy Chakraborty^. **NAACL** 2025
 * [AssertionBench: A Benchmark to Evaluate Large-Language Models for Assertion Generation
-](https://arxiv.org/pdf/2406.18627) <br/> Vaishnavi Pulavarthi, Deeksha Nandal, **Soham Dan\^**, Debjit Pal\^. **Findings of NAACL** 2025
+](https://arxiv.org/pdf/2406.18627) <br/> Vaishnavi Pulavarthi, Deeksha Nandal, **Soham Dan^**, Debjit Pal^. **Findings of NAACL** 2025
 * [CTBench: A Comprehensive Benchmark for Evaluating Language Model Capabilities in Clinical Trial Design](https://arxiv.org/pdf/2406.17888) <br/> Nafis Neehal, Bowen Wang, Shayom Debopadhaya, **Soham Dan**, Keerthiram Murugesan, Vibha Anand, Kristin P. Bennett. **Findings of NAACL** 2025
 * [Large Language Models can be Strong Self-Detoxifiers](https://arxiv.org/pdf/2410.03818) <br/> Ching-Yun Ko, Pin-Yu Chen, Payel Das, Youssef Mroueh, **Soham Dan**, Georgios Kollias, Subhajit Chaudhury, Tejaswini Pedapati, Luca Daniel. **ICLR** 2025
 * [On the Effects of Fine-tuning Language Models for Text-Based Reinforcement Learning](https://arxiv.org/pdf/2404.10174.pdf) <br/> Mauricio Gruppi, **Soham Dan**, Keerthiram Murugesan, Subhajit Chaudhury. **COLING** 2025
