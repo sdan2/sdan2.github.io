@@ -7,10 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
-For full list of publications see [Google Scholar(https://scholar.google.com/citations?user=nOsmu8UAAAAJ&hl=en&oi=ao)] (\* Equal Contribution, \^ Joint Advising)
+For full list of publications see [Google Scholar](https://scholar.google.com/citations?user=nOsmu8UAAAAJ&hl=en&oi=ao) (\* Equal Contribution, \^ Joint Advising)
 
 ### 2025
-* [Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models]()<br/> Amey Hengle, Prasoon Bajpai, **Soham Dan\^**, Tanmoy Chakraborty\^. **NAACL** 2025
+* [Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models](https://arxiv.org/pdf/2408.10151)<br/> Amey Hengle, Prasoon Bajpai, **Soham Dan\^**, Tanmoy Chakraborty\^. **NAACL** 2025
 * [AssertionBench: A Benchmark to Evaluate Large-Language Models for Assertion Generation
 ](https://arxiv.org/pdf/2406.18627) <br/> Vaishnavi Pulavarthi, Deeksha Nandal, **Soham Dan\^**, Debjit Pal\^. **Findings of NAACL** 2025
 * [CTBench: A Comprehensive Benchmark for Evaluating Language Model Capabilities in Clinical Trial Design](https://arxiv.org/pdf/2406.17888) <br/> Nafis Neehal, Bowen Wang, Shayom Debopadhaya, **Soham Dan**, Keerthiram Murugesan, Vibha Anand, Kristin P. Bennett. **Findings of NAACL** 2025
