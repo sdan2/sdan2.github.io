@@ -7,8 +7,15 @@ author_profile: true
 
 {% include base_path %}
 
-[[Google Scholar](https://scholar.google.com/citations?user=nOsmu8UAAAAJ&hl=en&oi=ao)] (\* Equal Contribution)
+For full list of publications see [Google Scholar(https://scholar.google.com/citations?user=nOsmu8UAAAAJ&hl=en&oi=ao)] (\* Equal Contribution, \^ Joint Advising)
 
+### 2025
+* [Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models]()<br/> Amey Hengle, Prasoon Bajpai, **Soham Dan\^**, Tanmoy Chakraborty\^. **NAACL** 2024
+* [AssertionBench: A Benchmark to Evaluate Large-Language Models for Assertion Generation
+](https://arxiv.org/pdf/2406.18627) <br/> Vaishnavi Pulavarthi, Deeksha Nandal, **Soham Dan\^**, Debjit Pal\^. **Findings of NAACL** 2024
+* [CTBench: A Comprehensive Benchmark for Evaluating Language Model Capabilities in Clinical Trial Design](https://arxiv.org/pdf/2406.17888) <br/> Nafis Neehal, Bowen Wang, Shayom Debopadhaya, **Soham Dan**, Keerthiram Murugesan, Vibha Anand, Kristin P. Bennett. **Findings of NAACL** 2024
+* [Large Language Models can be Strong Self-Detoxifiers](https://arxiv.org/pdf/2410.03818) <br/> Ching-Yun Ko, Pin-Yu Chen, Payel Das, Youssef Mroueh, **Soham Dan**, Georgios Kollias, Subhajit Chaudhury, Tejaswini Pedapati, Luca Daniel. **ICLR** 2025
+* [On the Effects of Fine-tuning Language Models for Text-Based Reinforcement Learning](https://arxiv.org/pdf/2404.10174.pdf) <br/> Mauricio Gruppi, **Soham Dan**, Keerthiram Murugesan, Subhajit Chaudhury. **COLING** 2025
 
 ### Under Submission
 * [Understanding Calibration for Multilingual Question Answering Models](https://arxiv.org/pdf/2311.08669.pdf) <br/> Yahan Yang\*, **Soham Dan\***, Dan Roth and Insup Lee.
@@ -18,7 +25,7 @@ author_profile: true
 * [Investigating the Locality of Neural Network Training Dynamics](https://arxiv.org/pdf/2111.01166.pdf) <br/> **Soham Dan\***, Phanideep Gampa and Anirbit Mukherjee\*. 
 
 ### 2024
-* [On the Effects of Fine-tuning Language Models for Text-Based Reinforcement Learning](https://arxiv.org/pdf/2404.10174.pdf) <br/> Mauricio Gruppi, **Soham Dan**, Keerthiram Murugesan, Subhajit Chaudhury. **COLING** 2024
+
 * [NeuroPrune: A Neuro-inspired Topological Sparse Training Algorithm for Large Language Models](https://arxiv.org/pdf/2404.01306.pdf) <br/> Amit Dhurandhar, Tejaswini Pedapati, Ronny Luss, **Soham Dan**, Aurelie Lozano, Payel Das, Georgios Kollias. **Findings of ACL** 2024
 * [API-BLEND: A Comprehensive Corpora for Training and Benchmarking API LLMs](https://arxiv.org/pdf/2402.15491.pdf) <br/> Kinjal Basu, Ibrahim Abdelaziz, Subhajit Chaudhury, **Soham Dan**, Maxwell Crouse, Asim Munawar, Sadhana Kumaravel, Vinod Muthusamy, Pavan Kapanipathi and Luis A. Lastras. **ACL** 2024
 * [Larimar: Large Language Models with Episodic Memory Control](https://arxiv.org/pdf/2403.11901.pdf) <br/> Payel Das, Subhajit Chaudhury, Elliot Nelson, Igor Melnyk, Sarath Swaminathan, Sihui Dai, Aurélie Lozano, Georgios Kollias, Vijil Chenthamarakshan, **Soham Dan**, Pin-Yu Chen. **ICML** 2024
