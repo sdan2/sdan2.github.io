@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-For full list of publications see [Google Scholar](https://scholar.google.com/citations?user=nOsmu8UAAAAJ&hl=en&oi=ao) (\* Equal Contribution, \^ Joint Advising)
+For full list of publications see [Google Scholar](https://scholar.google.com/citations?user=nOsmu8UAAAAJ&hl=en&oi=ao) (\*: Equal Contribution, ^: Joint Advising)
 
 ### 2025
 * [Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models](https://arxiv.org/pdf/2408.10151)<br/> Amey Hengle, Prasoon Bajpai, **Soham Dan^**, Tanmoy Chakraborty^. **NAACL** 2025
