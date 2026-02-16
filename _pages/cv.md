@@ -16,7 +16,10 @@ Education
 
 Work experience
 ======
-* September 2024 - Present: Senior Research Scientist
+* February 2026 - Current: Machine Learning Research Scientist
+  * Scale AI, New York City
+
+* September 2024 - January 2026: Senior Research Scientist
   * Microsoft, New York City
 
 * September 2022 - 2024: Research Scientist
