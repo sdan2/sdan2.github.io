@@ -13,12 +13,12 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-$serif                      : "Source Serif 4", Georgia, Times, serif;
-$sans-serif                 : "Manrope", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$serif                      : "IBM Plex Sans", Georgia, Times, serif;
+$sans-serif                 : "IBM Plex Sans", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
-$sans-serif-narrow          : $sans-serif;
+$sans-serif-narrow          : "Space Grotesk", "IBM Plex Sans", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
 
 /* serif typefaces */
@@ -28,8 +28,8 @@ $bodoni                     : "Bodoni MT", serif;
 $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
-$global-font-family         : $serif;
-$header-font-family         : $sans-serif;
+$global-font-family         : $sans-serif;
+$header-font-family         : $sans-serif-narrow;
 $caption-font-family        : $sans-serif;
 
 /* type scale */
@@ -90,11 +90,11 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : #0f6b68;
-$link-color-hover           : #084b49;
+$link-color                 : #0e7490;
+$link-color-hover           : #155e75;
 $link-color-visited         : mix(#fff, $link-color, 20%);
-$masthead-link-color        : #355057;
-$masthead-link-color-hover  : #132c31;
+$masthead-link-color        : #334155;
+$masthead-link-color-hover  : #0f172a;
 
 
 /*
