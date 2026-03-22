@@ -2,6 +2,10 @@
    Custom site polish
    ========================================================================== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background:
     radial-gradient(circle at top left, rgba(19, 78, 74, 0.08), transparent 34%),
@@ -9,6 +13,9 @@ body {
     linear-gradient(180deg, #f8fbfa 0%, #ffffff 18%, #ffffff 100%);
   color: #24343a;
   font-family: "Source Serif 4", Georgia, serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -35,15 +42,29 @@ a:hover {
   color: #084b49;
 }
 
+::selection {
+  background: rgba(15, 107, 104, 0.18);
+  color: #132c31;
+}
+
 .masthead {
   border-bottom: 1px solid rgba(15, 58, 63, 0.1);
   background: rgba(255, 255, 255, 0.86);
   backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(19, 44, 49, 0.04);
 }
 
 .masthead__inner-wrap {
   padding-top: 1.15rem;
   padding-bottom: 1.15rem;
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav a {
+  position: relative;
 }
 
 .masthead__menu-item--lg a {
@@ -55,6 +76,24 @@ a:hover {
 .masthead__menu-item a {
   color: #355057;
   font-weight: 600;
+}
+
+.masthead__menu-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #0f6b68, #b87333);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.masthead__menu-item a:hover::after,
+.masthead__menu-item a:focus::after {
+  transform: scaleX(1);
 }
 
 #main {
@@ -135,9 +174,47 @@ a:hover {
   font-size: 1.05rem;
 }
 
+.page__title {
+  margin-bottom: 1rem;
+  color: #132c31;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.page__content > p:first-of-type {
+  color: #17343a;
+  font-size: 1.14rem;
+}
+
+.page__content p,
+.page__content li {
+  color: #365056;
+  line-height: 1.8;
+}
+
+.page__content strong,
+.page__content b {
+  color: #132c31;
+}
+
+.page__content ul li::marker,
+.page__content ol li::marker {
+  color: #0f6b68;
+}
+
 .page__content h2 {
   border-bottom: 0;
   color: #132c31;
+  margin-top: 2.2rem;
+  margin-bottom: 0.85rem;
+  font-size: 1.55rem;
+  letter-spacing: -0.03em;
+}
+
+.page__content h3 {
+  color: #17343a;
+  letter-spacing: -0.02em;
 }
 
 .hero-panel {
@@ -308,13 +385,41 @@ a:hover {
   font-weight: 700;
 }
 
+.archive .list__item,
 .archive__item {
   margin-bottom: 1.35rem;
+}
+
+.archive__item {
   padding: 1.2rem 1.3rem;
   border: 1px solid rgba(15, 58, 63, 0.08);
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.84);
   box-shadow: 0 16px 36px rgba(19, 44, 49, 0.05);
+}
+
+.archive__item-title {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  color: #132c31;
+  font-size: 1.2rem;
+  letter-spacing: -0.025em;
+}
+
+.archive__item-excerpt,
+.archive__item p {
+  color: #486168;
+}
+
+.page__meta,
+.archive__item-teaser,
+.page__date {
+  color: #6a8085;
+}
+
+.page__footer footer {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(15, 58, 63, 0.08);
 }
 
 .page__footer {
