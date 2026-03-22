@@ -1,5 +1,6 @@
 ---
 layout: archive
+title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,15 +9,19 @@ redirect_from:
 
 {% include base_path %}
 
+<div class="archive-intro">
+  <p class="archive-intro__lead">A concise overview of education, research experience, teaching, and awards.</p>
+</div>
+
 Education
 ======
-* B.Tech. in Computer Science and Engineering, Indian Institute of Technology (IIT) Kharagpur, 2012-2016
-* Ph.D in Computer Science, University of Illinois at Urbana Champaign (UIUC), 2016-2017 (transferred)
-* Ph.D in Computer Science and Informatics, University of Pennsylvania (UPenn), 2017-present
+* B.Tech. in Computer Science and Engineering, Indian Institute of Technology (IIT) Kharagpur
+* Graduate study in Computer Science, University of Illinois Urbana-Champaign
+* Ph.D. in Computer and Information Science, University of Pennsylvania
 
 Work experience
 ======
-* February 2026 - Current: Machine Learning Research Scientist
+* February 2026 - Present: Machine Learning Research Scientist
   * Scale AI, New York City
 
 * September 2024 - January 2026: Senior Research Scientist

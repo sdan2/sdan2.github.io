@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Soham Dan"
 title_separator          : "-"
 name                     : &name "Soham Dan"
-description              : &description "ML Researcher, Scale AI"
+description              : &description "Machine Learning researcher working on LLM agents, reasoning, robustness, and efficient NLP systems."
 url                      : https://sdan2.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sdan2/sdan2.github.io"
@@ -84,7 +84,7 @@ author:
   avatar           : "20200826_112826.jpg" #"img1.jpeg" #"20200826_112826.jpg"
   bio              : "ML Researcher, Scale AI"
   location         : 
-  employer         :
+  employer         : "Scale AI"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=nOsmu8UAAAAJ&hl=en&oi=ao"
   email            : 
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : #"sdan2"
+  github           : "sdan2"
   google_plus      :
   keybase          :
   instagram        :
