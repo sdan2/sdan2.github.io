@@ -51,20 +51,36 @@ redirect_from:
   <div class="highlight-list">
     <article class="highlight-card">
       <p class="highlight-card__meta">ICLR 2025</p>
-      <h3><a href="https://arxiv.org/pdf/2410.03818">Large Language Models can be Strong Self-Detoxifiers</a></h3>
-      <p>Examines how language models can reduce toxic behavior through their own generation and control mechanisms.</p>
+      <h3><a href="/publication/2025-iclr-large-language-models-can-be-strong-self-detoxifiers/">Large Language Models can be Strong Self-Detoxifiers</a></h3>
+      <p>How language models can reduce toxic behavior via their own generation and control mechanisms — no external classifier required.</p>
+    </article>
+    <article class="highlight-card">
+      <p class="highlight-card__meta">NAACL 2025</p>
+      <h3><a href="/publication/2025-naacl-multilingual-needle-in-a-haystack-investigating-long-context-behavior/">Multilingual Needle in a Haystack</a></h3>
+      <p>Investigating the long-context behavior of multilingual LLMs and where their retrieval fidelity degrades across languages.</p>
     </article>
     <article class="highlight-card">
       <p class="highlight-card__meta">ICML 2024</p>
-      <h3><a href="https://arxiv.org/pdf/2403.11901.pdf">Larimar: Large Language Models with Episodic Memory Control</a></h3>
-      <p>Studies memory control mechanisms for large language models, with implications for persistent and agentic systems.</p>
+      <h3><a href="/publication/2024-icml-larimar-large-language-models-with-episodic-memory-control/">Larimar: LLMs with Episodic Memory Control</a></h3>
+      <p>Memory control mechanisms for LLMs, with implications for persistent and agentic systems that need editable, attributable knowledge.</p>
+    </article>
+    <article class="highlight-card">
+      <p class="highlight-card__meta">AAAI 2024</p>
+      <h3><a href="/publication/2024-aaai-generalized-planning-in-pddl-domains-with-pretrained-large/">Generalized Planning in PDDL Domains with Pretrained LLMs</a></h3>
+      <p>Using pretrained LLMs to synthesize generalized plans across PDDL domains — connecting symbolic planning and language modeling.</p>
+    </article>
+    <article class="highlight-card">
+      <p class="highlight-card__meta">ACL 2024</p>
+      <h3><a href="/publication/2024-acl-api-blend-a-comprehensive-corpora-for-training-and-benchmarking/">API-BLEND: Training and Benchmarking API LLMs</a></h3>
+      <p>A comprehensive corpus for training and evaluating LLMs that invoke external tools and APIs in realistic settings.</p>
     </article>
     <article class="highlight-card">
       <p class="highlight-card__meta">ICML 2022</p>
-      <h3><a href="https://arxiv.org/pdf/2202.09717.pdf">Understanding Robust Generalization in Learning Regular Languages</a></h3>
-      <p>Analyzes how models generalize under robustness constraints, connecting theory and empirical behavior.</p>
+      <h3><a href="/publication/2022-icml-understanding-robust-generalization-in-learning-regular-languages/">Robust Generalization in Learning Regular Languages</a></h3>
+      <p>How models generalize under robustness constraints, connecting formal language theory and the empirical behavior of neural learners.</p>
     </article>
   </div>
+  <p class="feature-section__more"><a href="/publications/">See the full publication list →</a></p>
 </section>
 
 <section class="feature-section feature-section--compact">

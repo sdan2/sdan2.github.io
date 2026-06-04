@@ -442,6 +442,25 @@ a:hover {
   padding: 1.5rem 0 0.5rem;
 }
 
+.feature-section__more {
+  margin: 1.5rem 0 0;
+  text-align: right;
+
+  a {
+    display: inline-block;
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    background: rgba(14, 165, 233, 0.08);
+    color: #0e7490;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 140ms ease;
+
+    &:hover { background: rgba(14, 165, 233, 0.18); }
+  }
+}
+
 .section-heading {
   max-width: 42rem;
 }
@@ -529,4 +548,537 @@ a:hover {
   .highlight-list {
     grid-template-columns: 1fr;
   }
+}
+
+/* ==========================================================================
+   Publication cards (per-paper entries on /publications/ and selected lists)
+   ========================================================================== */
+
+.archive-intro__note {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.85rem;
+
+  span {
+    color: #0e7490;
+    font-weight: 700;
+  }
+}
+
+.pub-year-heading {
+  margin: 2rem 0 0.85rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.22);
+  color: #0e7490;
+  font-family: $sans-serif-narrow, $sans-serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  scroll-margin-top: 5rem;
+
+  &:first-of-type { margin-top: 0.5rem; }
+}
+
+.pub-year-group {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.pub-card {
+  position: relative;
+  padding: 1.1rem 1.25rem 1rem;
+  border: 1px solid rgba(56, 189, 248, 0.16);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(239, 248, 255, 0.78));
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+  transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    border-color: rgba(14, 165, 233, 0.32);
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+  }
+}
+
+.pub-card__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.4rem;
+}
+
+.pub-card__venue {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  padding: 0.18rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(14, 116, 144, 0.08);
+  color: #0e7490;
+  font-family: $sans-serif-narrow, $sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.pub-card__year {
+  color: #0891b2;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.pub-card__qual {
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.1);
+  color: #4338ca;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pub-card__title {
+  margin: 0.1rem 0 0.45rem;
+  font-family: $sans-serif-narrow, $sans-serif;
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+
+  a {
+    color: #0f172a;
+    text-decoration: none;
+    background-image: linear-gradient(90deg, rgba(14, 165, 233, 0.5), rgba(14, 165, 233, 0.5));
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 160ms ease, color 140ms ease;
+
+    &:hover {
+      color: #0e7490;
+      background-size: 100% 1px;
+    }
+  }
+}
+
+.pub-card__authors {
+  margin: 0 0 0.55rem;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+  strong {
+    color: #0f172a;
+  }
+}
+
+.pub-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.15rem;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid rgba(14, 165, 233, 0.32);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  color: #0e7490;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 140ms ease, color 140ms ease, border-color 140ms ease;
+
+  &:hover {
+    background: #0e7490;
+    border-color: #0e7490;
+    color: #fff;
+  }
+}
+
+.pub-cite {
+  position: relative;
+
+  > summary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.65rem;
+    border: 1px dashed rgba(14, 165, 233, 0.4);
+    border-radius: 999px;
+    background: transparent;
+    color: #0e7490;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    list-style: none;
+    transition: background 140ms ease;
+
+    &::-webkit-details-marker { display: none; }
+    &::after {
+      content: "▾";
+      margin-left: 0.3rem;
+      font-size: 0.7rem;
+      transition: transform 160ms ease;
+    }
+  }
+
+  &[open] > summary {
+    background: rgba(14, 165, 233, 0.08);
+
+    &::after { transform: rotate(180deg); }
+  }
+}
+
+.pub-cite__body {
+  margin-top: 0.55rem;
+  padding: 0.7rem 0.9rem;
+  border-left: 3px solid #0ea5e9;
+  border-radius: 0 12px 12px 0;
+  background: rgba(239, 248, 255, 0.65);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #1a2936;
+
+  p { margin: 0 0 0.25rem; }
+  p:last-child { margin-bottom: 0; }
+  a { color: #0e7490; word-break: break-all; }
+}
+
+@media (max-width: 600px) {
+  .pub-card { padding: 0.95rem 1rem 0.85rem; }
+  .pub-card__title { font-size: 1.05rem; }
+  .pub-card__authors { font-size: 0.9rem; }
+}
+
+/* ==========================================================================
+   Theme toggle button (rendered in masthead)
+   ========================================================================== */
+
+.theme-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-left: 0.4rem;
+  border: 1px solid rgba(56, 189, 248, 0.26);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  color: #0e7490;
+  cursor: pointer;
+  transition: background 140ms ease, transform 140ms ease, border-color 140ms ease;
+
+  &:hover {
+    background: #0e7490;
+    border-color: #0e7490;
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #0ea5e9;
+    outline-offset: 2px;
+  }
+
+  .theme-toggle__sun { display: inline; }
+  .theme-toggle__moon { display: none; }
+}
+
+[data-theme="dark"] .theme-toggle {
+  border-color: rgba(56, 189, 248, 0.34);
+  background: rgba(15, 28, 48, 0.6);
+  color: #38bdf8;
+
+  &:hover {
+    background: #38bdf8;
+    border-color: #38bdf8;
+    color: #0b1424;
+  }
+
+  .theme-toggle__sun { display: none; }
+  .theme-toggle__moon { display: inline; }
+}
+
+/* ==========================================================================
+   Dark mode — applied when <html data-theme="dark"> is set.
+   Overrides only the visible surfaces; structure stays identical.
+   ========================================================================== */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  body {
+    background:
+      radial-gradient(circle at 14% 18%, rgba(34, 211, 238, 0.10), transparent 26%),
+      radial-gradient(circle at 82% 14%, rgba(99, 102, 241, 0.12), transparent 24%),
+      radial-gradient(circle at 76% 82%, rgba(56, 189, 248, 0.10), transparent 26%),
+      linear-gradient(180deg, #0b1424 0%, #0e1c30 28%, #0a1322 100%);
+    color: #cbd5e1;
+  }
+
+  body::before {
+    background:
+      linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  }
+
+  body::after {
+    background:
+      radial-gradient(circle at 20% 0%, rgba(34, 211, 238, 0.10), transparent 28%),
+      radial-gradient(circle at 100% 10%, rgba(99, 102, 241, 0.10), transparent 25%);
+  }
+
+  a { color: #38bdf8; }
+  a:hover { color: #7dd3fc; }
+
+  ::selection { background: rgba(34, 211, 238, 0.42); color: #f8fafc; }
+
+  .masthead {
+    background: rgba(11, 22, 38, 0.78);
+    border-bottom-color: rgba(56, 189, 248, 0.18);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .masthead__menu-item a,
+  .greedy-nav a { color: #e2e8f0; }
+  .greedy-nav button .navicon,
+  .greedy-nav button .navicon::before,
+  .greedy-nav button .navicon::after { background: #cbd5e1; }
+
+  h1, h2, h3, h4, h5, h6,
+  .author__name,
+  .archive-intro__lead { color: #f1f5f9; }
+
+  .hero-panel {
+    background: linear-gradient(180deg, rgba(15, 28, 48, 0.85), rgba(11, 22, 38, 0.78));
+    border-color: rgba(56, 189, 248, 0.22);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.42);
+  }
+
+  .hero-panel__lead { color: #e2e8f0; }
+  .hero-panel__summary { color: #94a3b8; }
+  .eyebrow { color: #22d3ee; }
+
+  .button-link {
+    background: linear-gradient(135deg, #0e7490, #0ea5e9);
+    color: #f0f9ff;
+    box-shadow: 0 14px 28px rgba(14, 165, 233, 0.32);
+  }
+  .button-link--secondary {
+    background: rgba(15, 28, 48, 0.7);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.34);
+    box-shadow: none;
+  }
+  .button-link--secondary:hover {
+    background: rgba(56, 189, 248, 0.18);
+    color: #7dd3fc;
+  }
+
+  .info-card,
+  .highlight-card {
+    background: linear-gradient(180deg, rgba(15, 28, 48, 0.85), rgba(11, 22, 38, 0.78));
+    border-color: rgba(56, 189, 248, 0.18);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+  }
+
+  .info-card p,
+  .highlight-card p { color: #94a3b8; }
+  .info-card__label,
+  .highlight-card__meta { color: #22d3ee; }
+
+  .highlight-card h3 a { color: #f1f5f9; }
+  .highlight-card h3 a:hover { color: #38bdf8; }
+
+  .archive-intro {
+    background: linear-gradient(180deg, rgba(15, 28, 48, 0.85), rgba(11, 22, 38, 0.78));
+    border-color: rgba(56, 189, 248, 0.22);
+    border-left-color: #38bdf8;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  }
+  .archive-intro__lead { color: #f1f5f9; }
+  .archive-intro__note { color: #94a3b8; }
+  .archive-intro__note span { color: #38bdf8; }
+
+  .archive__item {
+    background: linear-gradient(180deg, rgba(15, 28, 48, 0.85), rgba(11, 22, 38, 0.78));
+    border-color: rgba(56, 189, 248, 0.18);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.32);
+  }
+  .archive__item p,
+  .archive__item-excerpt { color: #94a3b8; }
+  .archive__item-title { color: #f1f5f9; }
+  .page__meta,
+  .page__date { color: #64748b; }
+
+  .pub-year-heading {
+    color: #38bdf8;
+    border-bottom-color: rgba(56, 189, 248, 0.28);
+  }
+
+  .pub-card {
+    background: linear-gradient(180deg, rgba(15, 28, 48, 0.85), rgba(11, 22, 38, 0.78));
+    border-color: rgba(56, 189, 248, 0.18);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+  }
+  .pub-card:hover {
+    border-color: rgba(56, 189, 248, 0.42);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+  }
+  .pub-card__venue {
+    background: rgba(56, 189, 248, 0.14);
+    color: #38bdf8;
+  }
+  .pub-card__year { color: #67e8f9; }
+  .pub-card__qual {
+    background: rgba(99, 102, 241, 0.2);
+    color: #c7d2fe;
+  }
+  .pub-card__title a { color: #f1f5f9; }
+  .pub-card__title a:hover { color: #38bdf8; }
+  .pub-card__authors { color: #94a3b8; }
+  .pub-card__authors strong { color: #f1f5f9; }
+
+  .pub-link {
+    background: rgba(15, 28, 48, 0.5);
+    border-color: rgba(56, 189, 248, 0.34);
+    color: #38bdf8;
+  }
+  .pub-link:hover {
+    background: #38bdf8;
+    border-color: #38bdf8;
+    color: #0b1424;
+  }
+  .pub-cite > summary {
+    border-color: rgba(56, 189, 248, 0.46);
+    color: #38bdf8;
+  }
+  .pub-cite[open] > summary { background: rgba(56, 189, 248, 0.14); }
+  .pub-cite__body {
+    background: rgba(13, 27, 46, 0.7);
+    border-left-color: #38bdf8;
+    color: #cbd5e1;
+  }
+  .pub-cite__body a { color: #67e8f9; }
+
+  .feature-section__more a {
+    background: rgba(56, 189, 248, 0.14);
+    color: #38bdf8;
+  }
+  .feature-section__more a:hover { background: rgba(56, 189, 248, 0.26); }
+
+  /* Sidebar / author profile */
+  .sidebar .author__urls a,
+  .author__urls a { color: #cbd5e1; }
+  .author__urls a:hover { color: #38bdf8; }
+  .author__bio { color: #94a3b8; }
+
+  /* Page footer */
+  .page__footer footer { border-top-color: rgba(56, 189, 248, 0.18); color: #94a3b8; }
+  .page__footer a { color: #38bdf8; }
+
+  /* Tables, blockquote, hr — basic content elements */
+  blockquote {
+    border-left-color: #38bdf8;
+    color: #cbd5e1;
+    background: rgba(13, 27, 46, 0.5);
+  }
+  hr { border-color: rgba(56, 189, 248, 0.18); }
+
+  table { color: #cbd5e1; }
+  th { background: rgba(15, 28, 48, 0.85); color: #f1f5f9; border-color: rgba(56, 189, 248, 0.18); }
+  td { border-color: rgba(56, 189, 248, 0.14); }
+  tr:nth-child(even) { background: rgba(15, 28, 48, 0.4); }
+
+  /* Code blocks (syntax overrides for dark) */
+  div.highlighter-rouge,
+  figure.highlight {
+    background-color: #0f1d33;
+    border-color: rgba(56, 189, 248, 0.22);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+  }
+  div.highlighter-rouge::before,
+  figure.highlight::before {
+    background: linear-gradient(135deg, rgba(14, 116, 144, 0.22), rgba(14, 165, 233, 0.18));
+    color: #38bdf8;
+  }
+  .highlight { color: #e2e8f0; }
+  .highlight .c, .highlight .cm, .highlight .c1, .highlight .cs,
+  .highlight .sd, .highlight .sb,
+  .highlight .cp { color: #94a3b8; }
+  .highlight .err { color: #fda4af; }
+  .highlight .g, .highlight .gp, .highlight .go, .highlight .gt,
+  .highlight .gs, .highlight .ge,
+  .highlight .l, .highlight .ld,
+  .highlight .n, .highlight .na, .highlight .nl, .highlight .nn,
+  .highlight .nx, .highlight .py, .highlight .w, .highlight .p { color: #e2e8f0; }
+  .highlight .k, .highlight .kn, .highlight .kp,
+  .highlight .kr, .highlight .ow { color: #38bdf8; }
+  .highlight .kc { color: #fbbf24; }
+  .highlight .kd, .highlight .kt { color: #93c5fd; }
+  .highlight .o { color: #cbd5e1; }
+  .highlight .s, .highlight .s1, .highlight .s2, .highlight .sc,
+  .highlight .sh, .highlight .si, .highlight .sx,
+  .highlight .ss { color: #6ee7b7; }
+  .highlight .sr { color: #6ee7b7; font-style: italic; }
+  .highlight .se { color: #fbbf24; }
+  .highlight .m, .highlight .mf, .highlight .mh,
+  .highlight .mi, .highlight .mo, .highlight .il { color: #fbbf24; }
+  .highlight .nb, .highlight .bp { color: #93c5fd; }
+  .highlight .nc { color: #93c5fd; font-weight: 600; }
+  .highlight .nd { color: #c4b5fd; }
+  .highlight .ne { color: #fda4af; font-weight: 600; }
+  .highlight .nf { color: #c4b5fd; }
+  .highlight .ni { color: #fbbf24; }
+  .highlight .no { color: #fda4af; }
+  .highlight .nt { color: #38bdf8; }
+  .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color: #e2e8f0; }
+  .highlight .gd { color: #fda4af; background-color: rgba(244, 63, 94, 0.1); }
+  .highlight .gi { color: #6ee7b7; background-color: rgba(16, 185, 129, 0.1); }
+  .highlight .gr { color: #fda4af; }
+  .highlight .gh, .highlight .gu { color: #38bdf8; }
+}
+
+/* Respect system preference when the user hasn't explicitly chosen.
+   The inline script in <head> sets data-theme on <html> before paint, so this
+   only kicks in for the first visit before JS runs. */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    background: #0b1424;  /* prevent flash to white before paint */
+  }
+}
+
+/* ==========================================================================
+   Site search (Pagefind UI overrides)
+   ========================================================================== */
+
+.site-search {
+  margin-top: 1.25rem;
+  --pagefind-ui-scale: 0.95;
+  --pagefind-ui-primary: #0e7490;
+  --pagefind-ui-text: #1a2936;
+  --pagefind-ui-background: rgba(255, 255, 255, 0.86);
+  --pagefind-ui-border: rgba(56, 189, 248, 0.22);
+  --pagefind-ui-tag: rgba(14, 165, 233, 0.1);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 14px;
+  --pagefind-ui-font: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+[data-theme="dark"] .site-search {
+  --pagefind-ui-primary: #38bdf8;
+  --pagefind-ui-text: #cbd5e1;
+  --pagefind-ui-background: rgba(15, 28, 48, 0.78);
+  --pagefind-ui-border: rgba(56, 189, 248, 0.22);
+  --pagefind-ui-tag: rgba(56, 189, 248, 0.18);
 }

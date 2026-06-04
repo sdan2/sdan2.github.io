@@ -1,18 +1,12 @@
-# Authors
+# Single-author site — this file is retained only so any `author: <key>` references
+# in posts continue to resolve. The site author profile (sidebar) is driven by
+# `site.author` in _config.yml.
 
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Soham Dan:
+  name          : "Soham Dan"
+  bio           : "ML Researcher, Scale AI"
+  avatar        : "20200826_112826.jpg"
+  uri           : "https://sdan2.github.io"
+  github        : "sdan2"
+  linkedin      : "soham-dan-974286a1/"
+  googlescholar : "https://scholar.google.com/citations?user=nOsmu8UAAAAJ&hl=en&oi=ao"

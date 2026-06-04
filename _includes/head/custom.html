@@ -2,6 +2,32 @@
 
 <!-- start custom head snippets -->
 
+<!-- Theme: applied before paint to avoid FOUC. Honors saved preference,
+     otherwise falls back to prefers-color-scheme. -->
+<script>
+(function () {
+  try {
+    var stored = localStorage.getItem('theme');
+    var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = stored || (systemDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+    window.__toggleTheme = function () {
+      var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      var btn = document.querySelector('.theme-toggle');
+      if (btn) btn.setAttribute('aria-pressed', next === 'dark' ? 'true' : 'false');
+    };
+    // Reflect initial state once DOM is ready.
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.querySelector('.theme-toggle');
+      if (btn) btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+    });
+  } catch (e) { /* localStorage unavailable; theme stays at default */ }
+})();
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -38,5 +64,40 @@
   });
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+{% comment %}
+  JSON-LD ScholarlyArticle for individual publication pages.
+  Google Scholar's crawler reads this for richer indexing.
+{% endcomment %}
+{% if page.collection == "publications" %}
+  {% assign _authors_plain = page.authors | default: "" | replace: "\\*", "" | replace: "**", "" | replace: " and ", ", " %}
+  {% assign _authors_arr = _authors_plain | split: ", " %}
+  {% assign _pubdate = page.date | default: "1900-01-01" | date: "%Y-%m-%d" %}
+  {% assign _pubyear = page.year | default: page.date | default: "1900-01-01" | date: "%Y" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": {{ page.title | jsonify }},
+  "name": {{ page.title | jsonify }},
+  "datePublished": "{{ _pubdate }}",
+  "url": "{{ page.url | absolute_url }}",
+  "mainEntityOfPage": "{{ page.url | absolute_url }}",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  {% if page.venue and page.venue != "" %}"publisher": { "@type": "Organization", "name": {{ page.venue | jsonify }} },
+  "isPartOf": { "@type": "PublicationVolume", "name": {{ page.venue | jsonify }}, "datePublished": "{{ _pubyear }}" },{% endif %}
+  {% if page.paperurl and page.paperurl != "" %}"sameAs": [{{ page.paperurl | jsonify }}],{% endif %}
+  "author": [
+    {%- for a in _authors_arr -%}
+      {%- assign _name = a | strip -%}
+      {%- if _name != "" -%}
+        { "@type": "Person", "name": {{ _name | jsonify }} }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+{% endif %}
 
 <!-- end custom head snippets -->

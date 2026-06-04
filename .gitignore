@@ -1,3 +1,7 @@
 _site/
 .bundle/
 vendor/
+
+# Image optimization backups (originals kept locally; not for the repo)
+images/*.original.*
+
