@@ -204,6 +204,171 @@ a:hover {
   font-size: 0.96rem;
 }
 
+/* Mobile / tablet: render the sidebar as a compact header card at the top
+   of the page (instead of leaking the desktop sticky panel into the flow). */
+@media (max-width: 924px) {
+  .sidebar.sticky {
+    position: static;
+    float: none;
+    width: 100%;
+    margin: 0 0 1.5rem;
+    padding: 0.95rem 1rem;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(239, 248, 255, 0.72));
+    box-shadow: 0 12px 26px rgba(15, 23, 42, 0.06);
+  }
+
+  .sidebar > div[itemtype$="Person"] {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.95rem;
+    align-items: center;
+  }
+
+  .author__avatar {
+    display: block !important;
+    width: 64px !important;
+    height: 64px;
+    grid-row: span 1;
+  }
+
+  .sidebar .author__avatar img {
+    width: 64px !important;
+    height: 64px !important;
+    max-width: 64px;
+    padding: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(56, 189, 248, 0.32);
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.12);
+  }
+
+  .author__content {
+    display: block !important;
+    padding: 0 !important;
+    min-width: 0;
+  }
+
+  .sidebar .author__name {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    color: #0f172a;
+  }
+
+  .author__bio {
+    margin: 0.2rem 0 0;
+    font-size: 0.83rem;
+    line-height: 1.4;
+    color: #475569;
+  }
+
+  .author__meta {
+    margin: 0.2rem 0 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+  }
+
+  /* The urls wrapper spans the full row beneath avatar+name; the styled
+     gradient card is flattened to a row of compact pills. */
+  .author__urls-wrapper {
+    grid-column: 1 / -1;
+    margin-top: 0.75rem;
+  }
+
+  .sidebar .author__urls {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .sidebar .author__urls li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .sidebar .author__urls a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.32rem;
+    margin: 0;
+    padding: 0.28rem 0.6rem;
+    border: 1px solid rgba(14, 165, 233, 0.28);
+    border-radius: 8px;
+    background: rgba(14, 165, 233, 0.06);
+    color: #0e7490;
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+
+  .sidebar .author__urls a:hover {
+    background: #0e7490;
+    border-color: #0e7490;
+    color: #fff;
+  }
+
+  /* Location (non-link <li>) becomes a small chip too */
+  .sidebar .author__urls li:not(:has(a)) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.32rem;
+    padding: 0.28rem 0.6rem;
+    border-radius: 8px;
+    background: rgba(15, 23, 42, 0.04);
+    color: #475569;
+    font-size: 0.78rem;
+  }
+
+  /* CV button keeps its identity but matches the flat row */
+  .sidebar .author__cv-button {
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0.28rem 0.7rem !important;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+}
+
+/* Mobile sidebar: dark-mode variants */
+@media (max-width: 924px) {
+  [data-theme="dark"] {
+    .sidebar.sticky {
+      background: linear-gradient(180deg, rgba(15, 28, 48, 0.78), rgba(11, 22, 38, 0.7));
+      border-color: rgba(56, 189, 248, 0.22);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+    }
+    .sidebar .author__name { color: #f1f5f9; }
+    .author__bio { color: #cbd5e1; }
+    .sidebar .author__avatar img { border-color: rgba(56, 189, 248, 0.38); }
+    .sidebar .author__urls a {
+      background: rgba(56, 189, 248, 0.12);
+      border-color: rgba(56, 189, 248, 0.32);
+      color: #38bdf8;
+    }
+    .sidebar .author__urls a:hover {
+      background: #38bdf8;
+      border-color: #38bdf8;
+      color: #0b1424;
+    }
+    .sidebar .author__urls li:not(:has(a)) {
+      background: rgba(148, 163, 184, 0.1);
+      color: #cbd5e1;
+    }
+  }
+}
+
 .page__content {
   font-size: 1.05rem;
 }
