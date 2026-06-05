@@ -472,6 +472,83 @@ a:hover {
   letter-spacing: -0.04em;
 }
 
+/* Single-page section blocks (used on the home page for About / Publications / CV) */
+
+.page-section {
+  margin-top: 3.5rem;
+  scroll-margin-top: 5rem;
+
+  &:first-of-type { margin-top: 0; }
+}
+
+.page-section__head {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.22);
+
+  .eyebrow {
+    margin: 0 0 0.25rem;
+    color: #0e7490;
+  }
+}
+
+.page-section__title {
+  margin: 0;
+  font-family: $sans-serif-narrow, $sans-serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+}
+
+/* CV section: tighter typography for the dense markdown lists */
+#cv {
+  h3 {
+    margin: 1.7rem 0 0.5rem;
+    font-family: $sans-serif-narrow, $sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #0e7490;
+  }
+
+  ul {
+    margin: 0 0 0.75rem;
+    padding-left: 1.1rem;
+  }
+
+  li {
+    margin-bottom: 0.35rem;
+    color: #334155;
+    line-height: 1.55;
+
+    strong { color: #0f172a; }
+  }
+}
+
+/* "Curriculum Vitae" button in the author sidebar */
+.author__cv-button {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.4rem;
+  padding: 0.32rem 0.7rem !important;
+  border: 1px solid rgba(14, 165, 233, 0.34);
+  border-radius: 999px;
+  background: rgba(14, 165, 233, 0.08);
+  color: #0e7490 !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 140ms ease, color 140ms ease, border-color 140ms ease;
+
+  &:hover {
+    background: #0e7490;
+    border-color: #0e7490;
+    color: #fff !important;
+  }
+}
+
 .archive-intro {
   margin-bottom: 2rem;
   position: relative;
@@ -943,6 +1020,26 @@ ol.bibliography {
   .highlight .gi { color: #6ee7b7; background-color: rgba(16, 185, 129, 0.1); }
   .highlight .gr { color: #fda4af; }
   .highlight .gh, .highlight .gu { color: #38bdf8; }
+
+  /* Single-page section blocks */
+  .page-section__head { border-bottom-color: rgba(56, 189, 248, 0.28); }
+  .page-section__head .eyebrow { color: #38bdf8; }
+  .page-section__title { color: #f1f5f9; }
+  #cv h3 { color: #38bdf8; }
+  #cv li { color: #cbd5e1; }
+  #cv li strong { color: #f8fafc; }
+
+  /* Sidebar CV button */
+  .author__cv-button {
+    background: rgba(56, 189, 248, 0.16) !important;
+    border-color: rgba(56, 189, 248, 0.34);
+    color: #38bdf8 !important;
+  }
+  .author__cv-button:hover {
+    background: #38bdf8 !important;
+    border-color: #38bdf8;
+    color: #0b1424 !important;
+  }
 }
 
 /* Respect system preference when the user hasn't explicitly chosen.
