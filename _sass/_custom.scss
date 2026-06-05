@@ -84,6 +84,13 @@ a:hover {
   padding-bottom: 1.15rem;
 }
 
+.masthead__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 .greedy-nav {
   background: transparent;
 }
@@ -526,27 +533,108 @@ a:hover {
   }
 }
 
-/* "Curriculum Vitae" button in the author sidebar */
+/* "Curriculum Vitae" button in the author sidebar — fills the sidebar
+   width so the label can never overflow on narrow viewports. */
+.author__urls li:has(.author__cv-button) { padding: 0; }
 .author__cv-button {
-  display: inline-flex !important;
+  display: flex !important;
   align-items: center;
-  gap: 0.45rem;
-  margin-top: 0.4rem;
-  padding: 0.32rem 0.7rem !important;
+  justify-content: center;
+  gap: 0.4rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin: 0.5rem 0 0;
+  padding: 0.4rem 0.5rem !important;
   border: 1px solid rgba(14, 165, 233, 0.34);
-  border-radius: 999px;
+  border-radius: 8px;
   background: rgba(14, 165, 233, 0.08);
   color: #0e7490 !important;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
+  text-align: center;
   text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: background 140ms ease, color 140ms ease, border-color 140ms ease;
+
+  i { flex-shrink: 0; }
 
   &:hover {
     background: #0e7490;
     border-color: #0e7490;
     color: #fff !important;
   }
+}
+
+/* Bio section text (replaces the old hero-panel paragraphs) */
+.bio__lead {
+  margin: 0 0 1rem;
+  color: #0f172a;
+  font-family: $sans-serif-narrow, $sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
+}
+
+.bio__summary {
+  margin: 0;
+  color: #334155;
+  font-size: 1.02rem;
+  line-height: 1.65;
+
+  a {
+    color: #0e7490;
+    text-decoration: underline;
+    text-decoration-color: rgba(14, 116, 144, 0.35);
+    text-underline-offset: 2px;
+  }
+
+  a:hover {
+    text-decoration-color: #0e7490;
+  }
+}
+
+/* Masthead brand line — replaces the nav tabs */
+.masthead__brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  color: #0f172a;
+  font-family: $sans-serif-narrow, $sans-serif;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  transition: color 140ms ease;
+
+  &:hover {
+    color: #0e7490;
+    text-decoration: none;
+  }
+}
+
+.masthead__brand-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.masthead__brand-sep {
+  color: rgba(15, 23, 42, 0.35);
+  font-weight: 400;
+}
+
+.masthead__brand-role {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #475569;
+  letter-spacing: 0;
+}
+
+@media (max-width: 600px) {
+  .masthead__brand-sep,
+  .masthead__brand-role { display: none; }
 }
 
 .archive-intro {
@@ -1040,6 +1128,18 @@ ol.bibliography {
     border-color: #38bdf8;
     color: #0b1424 !important;
   }
+
+  /* Bio section */
+  .bio__lead { color: #f1f5f9; }
+  .bio__summary { color: #cbd5e1; }
+  .bio__summary a { color: #38bdf8; text-decoration-color: rgba(56, 189, 248, 0.45); }
+  .bio__summary a:hover { text-decoration-color: #7dd3fc; }
+
+  /* Masthead brand line */
+  .masthead__brand { color: #f1f5f9; }
+  .masthead__brand:hover { color: #38bdf8; }
+  .masthead__brand-sep { color: rgba(241, 245, 249, 0.35); }
+  .masthead__brand-role { color: #94a3b8; }
 }
 
 /* Respect system preference when the user hasn't explicitly chosen.
