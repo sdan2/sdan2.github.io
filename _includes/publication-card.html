@@ -22,9 +22,21 @@
   {%- assign venue_abbr = "Misc" -%}
 {%- endif -%}
 
+{%- comment -%}
+  Title links directly to the paper / arXiv / patent URL when present;
+  fall back to the internal Jekyll permalink so untargeted entries
+  still resolve.
+{%- endcomment -%}
 {%- assign paperurl = post.paperurl | default: "" -%}
-{%- assign is_arxiv = false -%}
-{%- if paperurl contains "arxiv.org" -%}{%- assign is_arxiv = true -%}{%- endif -%}
+{%- if paperurl != "" -%}
+  {%- assign title_href = paperurl -%}
+  {%- assign title_target = "_blank" -%}
+  {%- assign title_rel = "external noopener" -%}
+{%- else -%}
+  {%- assign title_href = post.url | prepend: base_path -%}
+  {%- assign title_target = "_self" -%}
+  {%- assign title_rel = "permalink" -%}
+{%- endif -%}
 
 {%- if post.year and post.year != "" -%}
   {%- assign citation_year = post.year -%}
@@ -36,7 +48,7 @@
   <div class="bib-row__abbr"><abbr class="bib-row__badge" title="{{ venue_full }}">{{ venue_abbr }}</abbr></div>
   <div class="bib-row__body">
     <div class="bib-row__title" itemprop="headline">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+      <a href="{{ title_href }}" target="{{ title_target }}" rel="{{ title_rel }}">{{ post.title }}</a>
     </div>
     {% if post.authors and post.authors != "" %}
     <div class="bib-row__authors" itemprop="author">{{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
@@ -45,20 +57,6 @@
       {% if venue_full != "" %}<em>{{ venue_full }}</em>{% if citation_year != "" %}, {{ citation_year }}{% endif %}{% elsif citation_year != "" %}{{ citation_year }}{% endif %}
       {% if post.qualifier %} &middot; {{ post.qualifier | remove: "(" | remove: ")" }}{% endif %}
       {% if post.category == "patent" %} &middot; Patent{% endif %}
-    </div>
-    <div class="bib-row__links">
-      {% if paperurl != "" %}<a class="bib-link" href="{{ paperurl }}" rel="noopener">{% if is_arxiv %}arXiv{% else %}PDF{% endif %}</a>{% endif %}
-      {% if post.codeurl %}<a class="bib-link" href="{{ post.codeurl }}" rel="noopener">Code</a>{% endif %}
-      {% if post.slidesurl %}<a class="bib-link" href="{{ post.slidesurl }}" rel="noopener">Slides</a>{% endif %}
-      {% if post.projecturl %}<a class="bib-link" href="{{ post.projecturl }}" rel="noopener">Project</a>{% endif %}
-      {% assign plain_authors = post.authors | replace: "**", "" | replace: "\*", "*" %}
-      <details class="bib-cite">
-        <summary>cite</summary>
-        <div class="bib-cite__body">
-          <p>{{ plain_authors }}. ({{ citation_year }}). <em>{{ post.title }}</em>.{% if venue_full != "" %} {{ venue_full }}.{% endif %}</p>
-          {% if paperurl != "" %}<p><a href="{{ paperurl }}">{{ paperurl }}</a></p>{% endif %}
-        </div>
-      </details>
     </div>
   </div>
 </li>
