@@ -1,48 +1,64 @@
 {% include base_path %}
 {% assign post = include.post %}
 
-{% comment %}
-  Detect arXiv vs publisher PDF so the link labels make sense.
-{% endcomment %}
-{% assign paperurl = post.paperurl | default: "" %}
-{% assign is_arxiv = false %}
-{% if paperurl contains "arxiv.org" %}{% assign is_arxiv = true %}{% endif %}
+{%- comment -%}
+  Derive a short venue abbreviation for the left badge.
+  Strip the "Findings of " / "Workshop on ... @ " prefixes that don't
+  belong on a 6-char badge, and trim common patent-ish strings.
+{%- endcomment -%}
+{%- assign venue_full = post.venue | default: "" -%}
+{%- assign venue_abbr = venue_full -%}
+{%- if venue_abbr contains "Findings of " -%}
+  {%- assign venue_abbr = venue_abbr | replace: "Findings of ", "" -%}
+{%- endif -%}
+{%- if venue_abbr contains " @ " -%}
+  {%- assign _split = venue_abbr | split: " @ " -%}
+  {%- assign venue_abbr = _split | last -%}
+{%- endif -%}
+{%- if venue_abbr contains "US Patent" -%}
+  {%- assign venue_abbr = "Patent" -%}
+{%- endif -%}
+{%- if venue_abbr == "" -%}
+  {%- assign venue_abbr = "Misc" -%}
+{%- endif -%}
 
-<article class="pub-card" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <header class="pub-card__head">
-    {% if post.venue and post.venue != "" %}
-      <span class="pub-card__venue">{{ post.venue }}{% if post.year %} <span class="pub-card__year">'{{ post.year | slice: 2, 2 }}</span>{% endif %}</span>
+{%- assign paperurl = post.paperurl | default: "" -%}
+{%- assign is_arxiv = false -%}
+{%- if paperurl contains "arxiv.org" -%}{%- assign is_arxiv = true -%}{%- endif -%}
+
+{%- if post.year and post.year != "" -%}
+  {%- assign citation_year = post.year -%}
+{%- else -%}
+  {%- assign citation_year = post.date | date: "%Y" -%}
+{%- endif -%}
+
+<li class="bib-row" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <div class="bib-row__abbr"><abbr class="bib-row__badge" title="{{ venue_full }}">{{ venue_abbr }}</abbr></div>
+  <div class="bib-row__body">
+    <div class="bib-row__title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+    </div>
+    {% if post.authors and post.authors != "" %}
+    <div class="bib-row__authors" itemprop="author">{{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}</div>
     {% endif %}
-    {% if post.qualifier %}<span class="pub-card__qual">{{ post.qualifier }}</span>{% endif %}
-    {% if post.category == "patent" %}<span class="pub-card__qual">Patent</span>{% endif %}
-  </header>
-
-  <h3 class="pub-card__title" itemprop="headline">
-    <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
-  </h3>
-
-  {% if post.authors and post.authors != "" %}
-    <p class="pub-card__authors" itemprop="author">
-      {{ post.authors | markdownify | remove: "<p>" | remove: "</p>" }}
-    </p>
-  {% endif %}
-
-  <div class="pub-card__links">
-    {% if paperurl != "" %}
-      <a class="pub-link" href="{{ paperurl }}" rel="noopener">{% if is_arxiv %}arXiv{% else %}PDF{% endif %}</a>
-    {% endif %}
-    {% if post.codeurl %}<a class="pub-link" href="{{ post.codeurl }}" rel="noopener">Code</a>{% endif %}
-    {% if post.slidesurl %}<a class="pub-link" href="{{ post.slidesurl }}" rel="noopener">Slides</a>{% endif %}
-    {% if post.projecturl %}<a class="pub-link" href="{{ post.projecturl }}" rel="noopener">Project</a>{% endif %}
-
-    {% assign plain_authors = post.authors | replace: "**", "" | replace: "\*", "*" %}
-    {% assign citation_year = post.year | default: post.date | date: "%Y" %}
-    <details class="pub-cite">
-      <summary>Cite</summary>
-      <div class="pub-cite__body">
-        <p class="pub-cite__text">{{ plain_authors }}. ({{ citation_year }}). <em>{{ post.title }}</em>.{% if post.venue %} {{ post.venue }}.{% endif %}</p>
-        {% if paperurl != "" %}<p class="pub-cite__link"><a href="{{ paperurl }}">{{ paperurl }}</a></p>{% endif %}
-      </div>
-    </details>
+    <div class="bib-row__meta">
+      {% if venue_full != "" %}<em>{{ venue_full }}</em>{% if citation_year != "" %}, {{ citation_year }}{% endif %}{% elsif citation_year != "" %}{{ citation_year }}{% endif %}
+      {% if post.qualifier %} &middot; {{ post.qualifier | remove: "(" | remove: ")" }}{% endif %}
+      {% if post.category == "patent" %} &middot; Patent{% endif %}
+    </div>
+    <div class="bib-row__links">
+      {% if paperurl != "" %}<a class="bib-link" href="{{ paperurl }}" rel="noopener">{% if is_arxiv %}arXiv{% else %}PDF{% endif %}</a>{% endif %}
+      {% if post.codeurl %}<a class="bib-link" href="{{ post.codeurl }}" rel="noopener">Code</a>{% endif %}
+      {% if post.slidesurl %}<a class="bib-link" href="{{ post.slidesurl }}" rel="noopener">Slides</a>{% endif %}
+      {% if post.projecturl %}<a class="bib-link" href="{{ post.projecturl }}" rel="noopener">Project</a>{% endif %}
+      {% assign plain_authors = post.authors | replace: "**", "" | replace: "\*", "*" %}
+      <details class="bib-cite">
+        <summary>cite</summary>
+        <div class="bib-cite__body">
+          <p>{{ plain_authors }}. ({{ citation_year }}). <em>{{ post.title }}</em>.{% if venue_full != "" %} {{ venue_full }}.{% endif %}</p>
+          {% if paperurl != "" %}<p><a href="{{ paperurl }}">{{ paperurl }}</a></p>{% endif %}
+        </div>
+      </details>
+    </div>
   </div>
-</article>
+</li>
