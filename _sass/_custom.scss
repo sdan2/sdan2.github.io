@@ -654,13 +654,16 @@ a:hover {
 }
 
 .page-section__head {
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.75rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: 0.55rem;
   border-bottom: 1px solid rgba(56, 189, 248, 0.22);
 
   .eyebrow {
-    margin: 0 0 0.25rem;
+    margin: 0;
     color: #0e7490;
+    font-size: 0.92rem;
+    font-weight: 800;
+    letter-spacing: 0.22em;
   }
 }
 
@@ -671,6 +674,19 @@ a:hover {
   font-weight: 700;
   letter-spacing: -0.03em;
   color: #0f172a;
+}
+
+/* Tiny legend under the Publications section header */
+.bib-legend {
+  margin: -0.4rem 0 1.1rem;
+  color: #64748b;
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
+
+  span {
+    color: #0e7490;
+    font-weight: 700;
+  }
 }
 
 /* CV section: tighter typography for the dense markdown lists */
@@ -1278,6 +1294,8 @@ ol.bibliography {
   .page-section__head { border-bottom-color: rgba(56, 189, 248, 0.28); }
   .page-section__head .eyebrow { color: #38bdf8; }
   .page-section__title { color: #f1f5f9; }
+  .bib-legend { color: #94a3b8; }
+  .bib-legend span { color: #38bdf8; }
   #cv h3 { color: #38bdf8; }
   #cv li { color: #cbd5e1; }
   #cv li strong { color: #f8fafc; }

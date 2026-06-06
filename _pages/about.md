@@ -19,15 +19,8 @@ redirect_from:
 <section id="publications" class="page-section">
   <header class="page-section__head">
     <p class="eyebrow">Publications</p>
-    <h2 class="page-section__title">Selected and recent work</h2>
   </header>
-  <div class="archive-intro">
-    <p class="archive-intro__lead">Publications across natural language processing, robustness, reasoning, planning, multimodal learning, and LLM evaluation.</p>
-    {% if author.googlescholar %}
-    <p>For a complete and regularly updated list, see <a href="{{author.googlescholar}}">Google Scholar</a>.</p>
-    {% endif %}
-    <p class="archive-intro__note"><span>*</span> equal contribution &nbsp;·&nbsp; <span>^</span> joint advising</p>
-  </div>
+  <p class="bib-legend"><span>*</span> equal contribution &nbsp;·&nbsp; <span>^</span> joint advising</p>
 
 {% include base_path %}
 
@@ -53,7 +46,6 @@ redirect_from:
 
 <header class="page-section__head">
   <p class="eyebrow">Curriculum Vitae</p>
-  <h2 class="page-section__title">Education, experience, and awards</h2>
 </header>
 
 ### Education
