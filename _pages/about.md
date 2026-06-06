@@ -20,7 +20,6 @@ redirect_from:
   <header class="page-section__head">
     <p class="eyebrow">Publications</p>
   </header>
-  <p class="bib-legend"><span>*</span> equal contribution &nbsp;·&nbsp; <span>^</span> joint advising</p>
 
 {% include base_path %}
 
